@@ -12,5 +12,4 @@ public class JpaDemoApplicationTests {
 	@Test
 	public void contextLoads() {
 	}
-
 }

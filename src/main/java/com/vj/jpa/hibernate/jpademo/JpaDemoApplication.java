@@ -23,10 +23,11 @@ public class JpaDemoApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		Course course = courseRepository.findById(10001L);
+		/*Course course = courseRepository.findById(10001L);
 		logger.info("find by id 10001 -> {} "+course);
 		courseRepository.deleteById(10001L);
+		courseRepository.save(new Course("ms in 100 steps"));*/
 
-
+		courseRepository.playWithEntityManager();
 	}
 }
